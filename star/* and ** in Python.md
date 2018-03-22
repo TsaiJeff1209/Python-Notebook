@@ -19,7 +19,7 @@ dic = {'name':'Jeff', 'age':25, 'country':'Taipei', 'food':'apple', 'habit':'hik
 Intro(lst[0], lst[1], lst[2], lst[3], lst[4])
 Intro(dic['name'], dic['age'], dic['country'], dic['food'], dic['habit'])
 ```
-而使用 `*` 和 `**` 的情況下：
+而使用 `*` 和 `**` 的可以達到一樣的效果：
 ```python
 Intro(*lst)
 Intro(**dic)
