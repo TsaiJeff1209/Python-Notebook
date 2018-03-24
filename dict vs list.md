@@ -1,5 +1,5 @@
 # (一)查找速度上的差異
-## 同一套邏輯的函數將 dict 和 list 分別套入，速度比是 64ms 和 596ms　
+## 同一套邏輯的函數分別套入 dict 和 list，速度比是 64ms 和 596ms　
 ### 參照[1_Two Sum](https://github.com/TsaiJeff1209/LeetCode-Problem-Python)
 ```python
 class Solution:
