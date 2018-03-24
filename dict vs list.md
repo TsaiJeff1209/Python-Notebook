@@ -1,6 +1,6 @@
 # (一)查找速度上的差異
 ## 同一套邏輯的函數分別套入 dict 和 list，速度比是 64ms 和 596ms　
-### 參照 LeetCode-Problem-Python 的 [1_Two Sum](https://github.com/TsaiJeff1209/LeetCode-Problem-Python)
+### 參照 [LeetCode-Problem-Python](https://github.com/TsaiJeff1209/LeetCode-Problem-Python) 的 [1_Two Sum](https://github.com/TsaiJeff1209/LeetCode-Problem-Python/blob/master/1_Two%20Sum.md)
 ```python
 class Solution:
     def twoSum(self, nums, target):
