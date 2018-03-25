@@ -3,7 +3,7 @@
 ### 次次標題
 
 ### 連結
-[舉例](https://github.com/TsaiJeff1209)
+[GitHub Example](https://github.com/TsaiJeff1209)
 
 ### 表格
 | 欄位名稱 | 描述 |
@@ -18,6 +18,8 @@
 | keywords | 這個專案的一些關鍵字 |
 
 ### code顯示
+`my_list` 可以在敘述中將coding用詞以此方式標示
+
 ```python
 def fun(test):
     return "This is just a example."
