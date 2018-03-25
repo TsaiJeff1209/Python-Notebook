@@ -7,15 +7,6 @@
 
 ```python
 def firstUniqChar(s):
-  if len(s) == 0:
-    return -1
-  s1 = s
-  while len(s1) > 0:
-    if s1.count(s1[0]) == 1:
-      return s.find(s1[0])
-    s1 = s1.replace(s1[0],"")
-  return -1
-def firstUniqChar(s):
     if len(s) == 0:
         return -1
     s1 = s
@@ -24,8 +15,15 @@ def firstUniqChar(s):
             return s.find(s1[0])
         s1 = s1.replace(s1[0],"")
     return -1
-            
 ```
 
 初始的樣子,
-
+```python
+def firstUniqChar(s):
+    if len(s) == 0:
+        return -1
+    for i,c in enumerate(s):
+        if s.count(c) == 1:
+            return i
+    return -1
+```
