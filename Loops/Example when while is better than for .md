@@ -12,6 +12,7 @@ def firstUniqChar(s):
     return -1
 ```
 ## Version： `while`
+### beats 86.46 % of python3, Spend 88 ms
 ```python
 def firstUniqChar(s):
     if len(s) == 0:
