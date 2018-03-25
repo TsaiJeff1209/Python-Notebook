@@ -16,3 +16,10 @@
 | author | 作者 |
 | author_email | 作者信箱 |
 | keywords | 這個專案的一些關鍵字 |
+
+### code顯示
+```python
+def fun(test):
+    return "This is just a example."
+```
+
