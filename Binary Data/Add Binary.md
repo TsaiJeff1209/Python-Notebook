@@ -15,6 +15,6 @@ print( int(b,2) ) # output : 7
 
 my_sum = int(b,2) + int(b,2) # my_sum = 10
 
-print( bin(my_sum) )     # output : '0b1010'
+print( bin(my_sum) )     # output : '0b1010'  The prefix 0b represents that the result is a binary string.
 print( bin(my_sum)[2:] ) # output : '1010'
 ```
