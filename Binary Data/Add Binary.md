@@ -1,8 +1,8 @@
 Reference ： [Add Binary](https://leetcode.com/problems/add-binary/description/)
 
-Given two binary strings, return their sum (also a binary string).
-For example,  
-a = "11"  
+Given two binary strings, return their sum (also a binary string).  
+For example,  
+a = "11"  
 b = "111"  
 Return "1010".  
 
