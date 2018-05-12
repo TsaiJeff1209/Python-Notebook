@@ -1,6 +1,3 @@
-# 123
-
-
 ### Create a dataframe called ```df```
 ```python
 import pandas as pd
