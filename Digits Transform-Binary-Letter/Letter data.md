@@ -4,13 +4,13 @@ chr(65) A
 
 ord("A") 65
 
-|Letter|Code|Number|
+|Code|Letter|Number|
 |:-------:|:-------:|:-------:|
-|`string`||`integer`|
-|"A"|`ord("A")`|65|
-|"B"|`ord("B")`|66|
+||`string`|`integer`|
+|`ord("A")`|"A"|65|
+|`ord("B")`|"B"|66|
 |...|...|...|
-|"Y"|`ord("Y")`|89|
-|"Z"|`ord("Z")`|90|
+|`ord("Y")`|"Y"|89|
+|`ord("Z")`|"Z"|90|
 
 
