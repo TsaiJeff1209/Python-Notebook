@@ -6,7 +6,7 @@ ord("A") 65
 
 |Code|Number|
 |:----------:|:----------:|
-|ord`string`|`integer`|
+|ord(`string`)|`integer`|
 |`ord("A")`|65|
 |`ord("B")`|66|
 |...|...|
