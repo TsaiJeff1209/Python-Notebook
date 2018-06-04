@@ -3,7 +3,7 @@
 ### 參照 [LeetCode-Problem-Python](https://github.com/TsaiJeff1209/LeetCode-Problem-Python) 的 001 Two Sum
 
 ```python
-#　List version
+#　List Method
 class Solution:
     def twoSum(self, nums, target):
         """
@@ -19,7 +19,7 @@ class Solution:
             lst += [num]
         return None
 
-# dictionary version
+# Dictionary Method
 class Solution:
     def twoSum(self, nums, target):
         """
