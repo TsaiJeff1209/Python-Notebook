@@ -4,6 +4,7 @@ chr(65) A
 
 ord("A") 65
 
+### Table: Letter to digit
 |Code|Number|
 |:----------:|:----------:|
 |ord(`string`)|`integer`|
@@ -13,7 +14,7 @@ ord("A") 65
 |`ord("Y")`|89|
 |`ord("Z")`|90|
 
-
+### Table: digit to Letter
 |Code|Number|
 |:----------:|:----------:|
 |chr(`integer`)|`string`|
@@ -22,3 +23,5 @@ ord("A") 65
 |...|...|
 |`chr(89)`|"Y"|
 |`chr(90)`|"Z"|
+
+
