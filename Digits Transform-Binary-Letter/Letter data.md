@@ -27,7 +27,7 @@ ord("A") 65
 ### 字母比大小
 |Code|Output|Explain|
 |:----------:|:----------:|:----------:|
-|`66>65`|`True`|trivial|
+|`66>65`|`True`|Trivial|
 |`'B'>'A'`|`True`|66 is great than 65, so output is True|
 |`'A'>'Z'`|`False`|65 is less than 90, so output is False|
 |`'a'>'A'`|`True`|97 is great than 65, so output is True|
