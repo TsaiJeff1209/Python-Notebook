@@ -1,6 +1,6 @@
 
 
-## lzma
+## Package: lzma
 ### Satisfied version : `Python2.7`
 ```
 # what you probability need before install lzma
