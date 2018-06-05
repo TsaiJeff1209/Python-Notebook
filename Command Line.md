@@ -5,9 +5,7 @@
 
 
 
-176
-down vote
-Iterate through...
+### Iterate through...
 * files in current dir: `for %f in (.\*) do @echo %f`
 * ubdirs in current dir: `for /D %s in (.\*) do @echo %s`
 * files in current and all subdirs: `for /R %f in (.\*) do @echo %f`
