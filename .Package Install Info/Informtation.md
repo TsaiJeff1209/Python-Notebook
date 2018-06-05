@@ -3,7 +3,7 @@
 ## Package: `lzma`
 ### Satisfied version : `Python2.7`
 ```
-# what you probability need before install lzma
+# what packages you probability need before install lzma
   # Returns the red text like 'distributed 1.21.8 requires msgpack, which is not installed.'
   pip install msgpack
   # Returns the red text like 'mkl-fft 1.0.0 requires cython, which is not installed.'
