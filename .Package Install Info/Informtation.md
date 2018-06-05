@@ -1,7 +1,7 @@
 
 
-### lzma
-Satisfied version : `Python2.7`
+## lzma
+### Satisfied version : `Python2.7`
 ```
 # what you probability need before install lzma
   # Returns the red text like 'distributed 1.21.8 requires msgpack, which is not installed.'
