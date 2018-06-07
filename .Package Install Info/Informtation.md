@@ -1,6 +1,6 @@
 
 
-## Package: `lzma`
+## Package: `lzma`、`backports.lzma`
 ### Satisfied version : `Python2.7`
 ```
 # what packages you probability need before install lzma
