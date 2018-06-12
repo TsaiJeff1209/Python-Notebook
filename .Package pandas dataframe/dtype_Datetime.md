@@ -29,9 +29,9 @@ df['DATA_TIME_datetype'] = pd.to_datetime(df['DATA_TIME'])
 |2018/12/8 05:00|2018-12-08 05:00:00|
 |2018/12/15 05:15|2018-12-15 05:15:00|
 
-In the past , ```pd.to_datetime``` need more parameter like ```pd.to_datetime(df['DATA_TIME'],format='%d/%m/%Y']```.  
+In the past , `pd.to_datetime` need more parameter like `pd.to_datetime(df['DATA_TIME'],format='%d/%m/%Y']`.  
 Now, this function is smart enough to identify the format automatically.  
-So, you just need to input the Series into ```pd.to_datetime``` and always don't worry about the format.
+So, you just need to input the Series into `pd.to_datetime` and always don't worry about the format.
 
 
 
