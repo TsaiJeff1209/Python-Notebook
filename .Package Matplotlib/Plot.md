@@ -12,7 +12,7 @@
 |...|...|...|
 
 
-### Plot Structure
+## Plot Structure
 ```python
 from matplotlib import pyplot as plt
 # set the window and axis of image
@@ -46,8 +46,8 @@ ax.set_yticklabels(y_labels)
 plt.savefig('save_a_image.png')
 plt.show()
 ```
-
-
+---
+## More about Plot
 ```python
 from matplotlib import pyplot as plt
 # line plot
