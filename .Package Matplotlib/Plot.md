@@ -15,10 +15,11 @@
 ## Plot Structure
 ```python
 from matplotlib import pyplot as plt
+#--------------------------------------------------
 # set the window and axis of image
 plt.figure(figsize=(width,height))
 plt.axis([x_start, x_end, y_start, y_end])
-
+#--------------------------------------------------
 # Plot
     # line plot
 plt.plot(x_values,y_values)
@@ -28,23 +29,24 @@ plt.bar(x_category, y_value)
 plt.hist(values)
     # pie plot
 plt.pie(values)
-
+#--------------------------------------------------
 # title and label
 plt.legend(["variable A","variable B"])
 plt.title("Title")
 plt.xlabel("xlabel")
 plt.ylabel("ylabel")
-
+#--------------------------------------------------
 # more detial about xlabel, ylabel
 ax = plt.subplot()
 ax.set_xticks(x_values)
 ax.set_xticklabels(x_labels)
 ax.set_yticks(y_values)
 ax.set_yticklabels(y_labels)
-
+#--------------------------------------------------
 # end of plot
 plt.savefig('save_a_image.png')
 plt.show()
+#--------------------------------------------------
 ```
 ---
 ## More about Plot
@@ -104,5 +106,5 @@ plt.pie(values, labels = value_labels) # add labels
 plt.pie(values, autopct='%0.2f') # example 4.08 , add percentage for every item
 plt.pie(values, autopct='%0.2f%%') # example 4.08% , add percentage for every item
 plt.pie(values, autopct='%d%%') # example 4 , add percentage for every item
-
+#--------------------------------------------------
 ```
