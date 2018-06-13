@@ -50,6 +50,7 @@ plt.show()
 ## More about Plot
 ```python
 from matplotlib import pyplot as plt
+#--------------------------------------------------
 # line plot
     # basic
 plt.plot(x_values,y_values)
@@ -59,7 +60,7 @@ plt.plot(x2_values,y2_values)
     # Line with Shaded Error
 plt.plot(x_values,y_values)
 plt.fill_between(x_values,y_lower_bound,y_upper_bound,alpha=0.2) # alpha: This sets the transparency of the histogram
-
+#--------------------------------------------------
 # bar plot (categorical data)
     # basic
 plt.bar(x_category, y_value)
@@ -80,7 +81,7 @@ plt.bar(x,As)
 plt.bar(x,Bs,bottom=As)
 c_bottom = np.add(As, Bs)
 plt.bar(x,Cs,bottom=c_bottom)
-
+#--------------------------------------------------
 # histogram plot
     # basic
 plt.hist(values,bins=10) # default of bins is 10
@@ -93,7 +94,7 @@ plt.hist(values, histtype = 'step') # histtype='step': draw just the outline of 
     # Two Histograms on a Plot
 plt.hist(values_1,normed=True) # normalized is optional, and it's always useful when compare.
 plt.hist(values_2,normed=True)
-
+#--------------------------------------------------
 # pie plot
     # basic
 plt.pie(values)
