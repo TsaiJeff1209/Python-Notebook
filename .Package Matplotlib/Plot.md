@@ -1,6 +1,4 @@
-123
-
-### Table: Letter to digit
+## Table: Letter to digit
 |Item|Image|
 |:--:|:--:|
 |Fill Between|![Fill_Between](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/fill_between.png)|
