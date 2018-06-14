@@ -1,14 +1,14 @@
 123
 
 ### Table: Letter to digit
-|Item|Image|Code|
-|:--:|:--:|:--|
-|Fill Between|![Fill_Between](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/fill_between.png)||
-|Error Bar|![Error_Bar](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/bar_chart.png)|...|
-|bar<br>side by side|![bar_side_by_side](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/sidebyside.png)|...|
-|Stacked Bar|![stacked_bar](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/stacked.png)|...|
-|Multiple Histogram|![multiple_histogram](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/multiple_histogram.png)|...|
-|Pie|![pie](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/pie.png)||
+|Item|Image|
+|:--:|:--:|
+|Fill Between|![Fill_Between](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/fill_between.png)|
+|Error Bar|![Error_Bar](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/bar_chart.png)|
+|bar<br>side by side|![bar_side_by_side](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/sidebyside.png)|
+|Stacked Bar|![stacked_bar](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/stacked.png)|
+|Multiple Histogram|![multiple_histogram](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/multiple_histogram.png)|
+|Pie|![pie](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/pie.png)|
 
 
 ## Plot Structure
@@ -48,7 +48,7 @@ plt.show()
 #--------------------------------------------------
 ```
 ---
-## More about Plot
+## plt.plot, plt.bar, plt.hist, plt.pie
 ```python
 from matplotlib import pyplot as plt
 #--------------------------------------------------
