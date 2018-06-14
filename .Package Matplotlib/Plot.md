@@ -8,7 +8,7 @@
 |Multiple Histogram|![multiple_histogram](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/multiple_histogram.png)|
 |Pie|![pie](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/pie.png)|
 
-
+---
 ## Plot Structure
 ```python
 from matplotlib import pyplot as plt
