@@ -1,4 +1,4 @@
-## Table: Letter to digit
+# Table: Plot
 |Item|Image|
 |:--:|:--:|
 |Fill Between|![Fill_Between](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/fill_between.png)|
@@ -9,7 +9,7 @@
 |Pie|![pie](https://github.com/TsaiJeff1209/Python-Notebook/blob/master/.Package%20Matplotlib/image/pie.png)|
 
 ---
-## Plot Structure
+# Plot Structure
 ```python
 from matplotlib import pyplot as plt
 #--------------------------------------------------
@@ -46,7 +46,7 @@ plt.show()
 #--------------------------------------------------
 ```
 ---
-## plt.plot, plt.bar, plt.hist, plt.pie
+# plt.plot, plt.bar, plt.hist, plt.pie
 ```python
 from matplotlib import pyplot as plt
 #--------------------------------------------------
