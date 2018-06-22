@@ -25,6 +25,7 @@ Link
 3. 開啟 `Anaconda Prompt` ，直接輸入指令加上檔案位置 `pip install D:\Download\xgboost-0.6-cp36-cp36m-win_amd64.whl`。  
 4. 等待完成。  
 
+---
 
 ### MySQLdb
 try `pip install mysqlclient`
