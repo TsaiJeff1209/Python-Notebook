@@ -28,5 +28,10 @@ Link
 ---
 
 ### MySQLdb
+Python2.7 若無`MySQLdb`，則由以下網址下載 MySQL-python，cp27表示python2.7
+Python2.7 + win32 : MySQL_python‑1.2.5‑cp27‑none‑win32.whl
+Python2.7 + win64 : MySQL_python‑1.2.5‑cp27‑none‑win_amd64.whl
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python
+
 try `pip install mysqlclient`
 
