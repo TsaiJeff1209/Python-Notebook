@@ -37,6 +37,10 @@ df['hour'] = df['DATA_TIME'].str.slice(-5)
 ---
 
 ### Method : ```pandas.to_datetime```
+In the past , `pd.to_datetime` need more parameter like `pd.to_datetime(df['DATA_TIME'],format='%d/%m/%Y']`.  
+Now, this function is smart enough to identify the format automatically.  
+So, you just need to input the Series into `pd.to_datetime` and always don't worry about the format.
+
 ```python
 import pandas as pd
 df = pd.DataFrame()
@@ -68,11 +72,7 @@ df['date_datetime'] = pd.to_datetime(df['date_string'])
 |Mar 15 2019 15:30:45|2019-03-15 15:30:45|
 |Mar 15 2019 153045|2019-03-15 15:30:45|
 
-In the past , `pd.to_datetime` need more parameter like `pd.to_datetime(df['DATA_TIME'],format='%d/%m/%Y']`.  
-Now, this function is smart enough to identify the format automatically.  
-So, you just need to input the Series into `pd.to_datetime` and always don't worry about the format.
-
-
+Get datetime by using ```Unix timestamp``` (or called```Unix time```,```POSIX time```)
 ```python
 import time
 import pandas as pd
