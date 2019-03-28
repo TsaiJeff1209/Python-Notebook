@@ -14,7 +14,9 @@ df = pd.DataFrame({'DATA_TIME' : ['2018/1/19 00:00','2018/2/6 07:00','2018/3/5 2
 |2018/12/8 05:00|D327|R451|
 |2018/12/15 05:15|D327|R451|
 
-### ```DataFrame.str.Slice```
+---
+
+### Method : ```DataFrame.str.Slice```
 ```python
 df['Len of DATA_TIME'] = [len(i) for i in df['DATA_TIME']]
 df['date'] = df['DATA_TIME'].str.slice(0,-5)
@@ -32,3 +34,24 @@ df['hour'] = df['DATA_TIME'].str.slice(-5)
 在有一次要切割```DATA_TIME```分為日期和小時區間的時候，發現到在python語法指定位置時，```slice(0,-5)```在這時候很好用，因為每個日期字串的長度不一，
 不像是如果要切割固定長度的```DISTRICT_ID```的後三碼，可以有兩種輸入法```slice(1,4)```、```slice(-3)```，兩者所裁切的長度是一樣的，但前者裁切的位置是固定的```(1,4)```，但後者的裁切位置則是不固定的從後面往前數```3```個，這個小眉角在切割```DATA_TIME```前段時，剛好可以使用。
 
+---
+
+### Method : ```pandas.to_datetime```
+```python
+import pandas as pd
+df['DATA_TIME_datetype'] = pd.to_datetime(df['DATA_TIME'])
+```
+|DATA_TIME|DATA_TIME_datetype|
+|:-------:|:-------:|
+|`string`|`datetime64[ns]`|
+|2018/1/19 00:00|2018-01-19 00:00:00|
+|2018/2/6 07:00|2018-02-06 07:00:00|
+|2018/3/5 22:00|2018-03-05 22:00:00|
+|2018/12/8 05:00|2018-12-08 05:00:00|
+|2018/12/15 05:15|2018-12-15 05:15:00|
+
+In the past , `pd.to_datetime` need more parameter like `pd.to_datetime(df['DATA_TIME'],format='%d/%m/%Y']`.  
+Now, this function is smart enough to identify the format automatically.  
+So, you just need to input the Series into `pd.to_datetime` and always don't worry about the format.
+
+---
