@@ -38,7 +38,7 @@ df['hour'] = df['DATA_TIME'].str.slice(-5)
 
 ### Method : ```pandas.to_datetime```
 ```python
-import pandas as pd
+# import pandas as pd
 df['DATA_TIME_datetype'] = pd.to_datetime(df['DATA_TIME'])
 ```
 |DATA_TIME|DATA_TIME_datetype|
