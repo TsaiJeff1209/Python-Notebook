@@ -72,4 +72,25 @@ In the past , `pd.to_datetime` need more parameter like `pd.to_datetime(df['DATA
 Now, this function is smart enough to identify the format automatically.  
 So, you just need to input the Series into `pd.to_datetime` and always don't worry about the format.
 
+
+```python
+import time
+import pandas as pd
+t = time.time() + 3600 * 8 # UTC + 8 hours
+t1 = pd.to_datetime(t)
+t2 = pd.to_datetime(t,unit='s')
+t3 = pd.to_datetime(int(t),unit='s')
+print('t1 =', t1)
+print('t2 =', t2)
+print('t3 =', t3)
+print('str(t3)[:10] =', str(t3)[:10])
+```
+```python
+# print
+t1 = 1970-01-01 00:00:01.553783525
+t2 = 2019-03-28 14:32:05.705245256
+t3 = 2019-03-28 14:32:05
+str(t3)[:10] = 2019-03-2
+```
+
 ---
