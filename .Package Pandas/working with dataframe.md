@@ -16,7 +16,7 @@ df = pd.DataFrame({'DATA_TIME' : ['2018/1/19 00:00','2018/2/6 07:00','2018/3/5 2
 
 ---
 
-### Method : ```DataFrame.str.Slice```
+### Method : ```DataFrame[column].str.Slice```
 ```python
 df['Len of DATA_TIME'] = [len(i) for i in df['DATA_TIME']]
 df['date'] = df['DATA_TIME'].str.slice(0,-5)
