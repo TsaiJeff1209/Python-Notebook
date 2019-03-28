@@ -38,17 +38,35 @@ df['hour'] = df['DATA_TIME'].str.slice(-5)
 
 ### Method : ```pandas.to_datetime```
 ```python
-# import pandas as pd
-df['DATA_TIME_datetype'] = pd.to_datetime(df['DATA_TIME'])
+import pandas as pd
+df = pd.DataFrame()
+df['date_string'] = ['20190315','2019/03/15','2019/3/15',
+                     '2019/March/15','2019/Mar/15','2019/mar/15',
+                     '2019-March-15','2019-Mar-15','2019-mar-15',
+                     '2019 03 15','2019 March 15',
+                     '2019 15 March','2019 15 Mar','Mar 15 2019',
+                     'Mar 15 2019 15:30:45','Mar 15 2019 153045']
+df['date_datetime'] = pd.to_datetime(df['date_string'])
 ```
-|DATA_TIME|DATA_TIME_datetype|
+|date_string|date_datetime|
 |:-------:|:-------:|
 |`string`|`datetime64[ns]`|
-|2018/1/19 00:00|2018-01-19 00:00:00|
-|2018/2/6 07:00|2018-02-06 07:00:00|
-|2018/3/5 22:00|2018-03-05 22:00:00|
-|2018/12/8 05:00|2018-12-08 05:00:00|
-|2018/12/15 05:15|2018-12-15 05:15:00|
+|20190315|2019-03-15 00:00:00|
+|2019/03/15|2019-03-15 00:00:00|
+|2019/3/15|2019-03-15 00:00:00|
+|2019/March/15|2019-03-15 00:00:00|
+|2019/Mar/15|2019-03-15 00:00:00|
+|2019/mar/15|2019-03-15 00:00:00|
+|2019-March-15|2019-03-15 00:00:00|
+|2019-Mar-15|2019-03-15 00:00:00|
+|2019-mar-15|2019-03-15 00:00:00|
+|2019 03 15|2019-03-15 00:00:00|
+|2019 March 15|2019-03-15 00:00:00|
+|2019 15 March|2019-03-15 00:00:00|
+|2019 15 Mar|2019-03-15 00:00:00|
+|Mar 15 2019|2019-03-15 00:00:00|
+|Mar 15 2019 15:30:45|2019-03-15 15:30:45|
+|Mar 15 2019 153045|2019-03-15 15:30:45|
 
 In the past , `pd.to_datetime` need more parameter like `pd.to_datetime(df['DATA_TIME'],format='%d/%m/%Y']`.  
 Now, this function is smart enough to identify the format automatically.  
